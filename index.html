@@ -19,7 +19,7 @@
   </style>
 </head>
 
-<body data-mode="cat">
+<body data-mode="coin">
   <main class="wrap" aria-label="Schrödingers Website">
     <div id="result" class="result" aria-live="polite"></div>
     <div class="row">
@@ -33,7 +33,7 @@
       const res = document.getElementById('result');
       const observe = document.getElementById('observe');
       const reset = document.getElementById('reset');
-      const mode = (document.body.getAttribute('data-mode') || 'coin').toLowerCase();
+      const mode = (document.body.getAttribute('data-mode') || 'cat').toLowerCase();
       const outcomes = mode === 'coin' ? ['Kopf', 'Zahl'] : ['lebendig', 'tot'];
 
       function rng(){
